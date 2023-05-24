@@ -1,8 +1,8 @@
 # Unpatched ini4j DoS vulnerability [CVE-2022-41404](https://nvd.nist.gov/vuln/detail/CVE-2022-41404)
 
 A CVE was submitted to NVD on 10/11/2022, claiming that [ini4j](https://mvnrepository.com/artifact/org.ini4j/ini4j) 
-prior to [0.5.4](https://mvnrepository.com/artifact/org.ini4j/ini4j/0.5.4) is vulnerable to a DoS attack. The ini file 
-payload is 
+*prior* to [0.5.4](https://mvnrepository.com/artifact/org.ini4j/ini4j/0.5.4) is vulnerable to a DoS attack. The ini file 
+payload is
 
 ```
 [sectionOne]
@@ -22,7 +22,7 @@ and then references the `sectionOne` `weight` key. This infinite lookup loop res
 DoS can be described as a [Billion Laugh attack](https://en.wikipedia.org/wiki/Billion_laughs_attack)
 
 It turns out that [0.5.4](https://mvnrepository.com/artifact/org.ini4j/ini4j/0.5.4) hasn't been updated since 2015, and 
-there is no fixed version!
+there is no fixed version.
 
 ## How to run the PoC
 
